@@ -1,0 +1,112 @@
+/* Styles for the header, modal, animations, and wanted person cards */
+body{
+    background-color: #EDECCE;
+}
+/* Styles for the header, modal, animations, and wanted person cards */
+h1 {
+    text-align: center;
+    margin: 10px; /* Adjust the margin as needed */
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #DC4D3F;
+  }
+  
+  h2 {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #DECEBA;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  #wantedList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .wanted-card {
+    background-color: #A8C1DC;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wanted-card:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .wanted-image {
+    width: 100px; /* Adjust the image width as needed */
+    height: 100px; /* Adjust the image height as needed */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Enlarge the button and change its background color */
+  #createObjectBtn,
+  #modalSaveBtn,
+  #modalCloseBtn,
+  #deleteButton,
+  #updateButton {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 10px 15px; /* Adjust the padding as needed */
+    background-color: #DC4D3F; /* Change the background color */
+    color: #fff; /* Change the text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  #createObjectBtn:hover,
+  #modalSaveBtn:hover,
+  #modalCloseBtn:hover,
+  #deleteButton:hover,
+  #updateButton:hover {
+    background-color: #BF3B36; /* Change the background color on hover */
+  }
+  

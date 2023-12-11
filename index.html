@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT215 Final</title>
+    <script src="jquery-3.7.1 copy.js"></script>
+    <script src="Final.js"></script>
+    <link rel="stylesheet" href="CIT215Final.css"/>
+</head>
+<body>
+    <h1>FBI's Wanted List</h1>
+    <h2>Click on the Wanted Person's to update and find out more about them at the bottom!</h2>
+
+    <ul id="wantedList"></ul>
+
+    <div id="details"></div>
+
+    <button id="createObjectBtn">Create Profile</button>
+
+    <!-- Modal for creating and updating objects -->
+    <div id="modal">
+        <label for="titleInput">Name of Person:</label>
+        <input type="text" id="titleInput">
+
+        <label for="descriptionInput">Description:</label>
+        <input type="text" id="descriptionInput">
+
+        <button id="modalSaveBtn">Save</button>
+        <button id="modalCloseBtn">Close</button>
+    </div>
+
+</body>
+</html>
